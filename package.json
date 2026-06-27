@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "GenLayer Intelligent Contract that automates DAO milestone-based grant approval using decentralized multi-node AI consensus.",
   "keywords": [
-    "genlayer", "dao", "grants", "blockchain", "ai",
-    "consensus", "web3", "governance", "milestone-review"
+    "genlayer",
+    "dao",
+    "grants",
+    "blockchain",
+    "ai",
+    "consensus",
+    "web3",
+    "governance",
+    "milestone-review"
   ],
   "homepage": "https://studio.genlayer.com/?import-contract=0x7e018D4b72D22E0De1F9f5C7A5f58661951DD0EB",
   "repository": {
@@ -16,6 +23,11 @@
     "dev": "npx serve frontend/",
     "start": "npx serve frontend/",
     "deploy:netlify": "netlify deploy --prod --dir frontend/",
-    "deploy:vercel": "vercel --prod"
+    "deploy:vercel": "vercel --prod",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.105.0"
   }
 }
